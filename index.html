@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <style>
+            body {
+                font-family:
+                    "Inter",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            .profile {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                background-color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 2rem;
+            }
+
+            .avatar {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .bio {
+                flex: 1;
+            }
+
+            h1 {
+                margin: 0 0 1rem 0;
+                color: #1a1a1a;
+                font-size: 2.5rem;
+            }
+
+            .title {
+                color: #666;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .description {
+                margin-bottom: 1.5rem;
+            }
+
+            .skills {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+
+            .skill-tag {
+                background-color: #e9ecef;
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                color: #495057;
+            }
+
+            .contact {
+                margin-top: 2rem;
+            }
+
+            .contact a {
+                color: #0066cc;
+                text-decoration: none;
+                margin-right: 1rem;
+            }
+
+            .contact a:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 600px) {
+                .profile {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .skills {
+                    justify-content: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile">
+                <img
+                    src="/api/placeholder/150/150"
+                    alt="Profile Picture"
+                    class="avatar"
+                />
+                <div class="bio">
+                    <h1>Jane Smith</h1>
+                    <div class="title">Full Stack Developer</div>
+                    <p class="description">
+                        Passionate developer with 5+ years of experience
+                        building web applications. Focused on creating clean,
+                        efficient, and user-friendly solutions. Always eager to
+                        learn new technologies and tackle challenging problems.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                    <div class="contact">
+                        <a href="mailto:jane@example.com">Email</a>
+                        <a href="https://github.com/janesmith">GitHub</a>
+                        <a href="https://linkedin.com/in/janesmith">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
